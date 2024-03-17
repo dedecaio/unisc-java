@@ -1,4 +1,6 @@
-import entities.Carro;
+package ex1;
+
+import ex1.entities.Carro;
 
 import java.util.Scanner;
 

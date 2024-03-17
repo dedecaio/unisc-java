@@ -1,4 +1,4 @@
-package entities;
+package ex1.entities;
 
 public class Carro {
     private String cor;
