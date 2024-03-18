@@ -9,7 +9,7 @@ public class Main2 {
         Scanner sc = new Scanner(System.in);
         Trator trator = new Trator();
         System.out.println("Criando Trator");
-        System.out.println("Qual a marca do trator? ");
+        System.out.println("Qual a marca do trator?");
         trator.setMarca(sc.nextLine());
         System.out.println("Qual a cor dele?");
         trator.cor = sc.nextLine();
@@ -17,6 +17,12 @@ public class Main2 {
 
         int n = 14;
         while (n != 0){
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.println();
             System.out.println("# Trator #");
             System.out.println("1 - Ligar Trator.");
             System.out.println("2 - Analisar Trator.");
@@ -29,6 +35,7 @@ public class Main2 {
             System.out.println("0 - Sair.");
             n = sc.nextInt();
             sc.nextLine();
+
             switch (n){
                 case 1:
                     trator.ligar();
@@ -59,6 +66,7 @@ public class Main2 {
                 default:
                     System.out.println("Opção Inválida! Tente Novamente");
             }
+
         }
     }
 
